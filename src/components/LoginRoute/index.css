@@ -1,0 +1,113 @@
+.bg-container {
+  height: 120vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.L-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 797px;
+  height: 509px;
+  top: 257px;
+  margin-left: 321px;
+  gap: 0px;
+  border-radius: 30px;
+  border: 2.05px 0px 0px 0px;
+  opacity: 0px;
+  background: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+  border: 2.05px solid;
+
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+  backdrop-filter: blur(116px);
+}
+
+.L-heading {
+  width: 340px;
+  height: 48px;
+  top: 323px;
+  left: 564px;
+  gap: 0px;
+  opacity: 0px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  font-family: 'Roboto';
+}
+.U-container {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  top: 417px;
+  left: 539px;
+  gap: 0px;
+  opacity: 0px;
+}
+.P-container {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  top: 505px;
+  left: 539px;
+  gap: 0px;
+  opacity: 0px;
+}
+.L-label {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.L-input {
+  margin-bottom: 10px;
+  width: 360px;
+  height: 60%;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #ffffff;
+  background-color: #42404d;
+}
+.S-container {
+  width: 124px;
+  height: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.label {
+  font-size: 15px;
+  color: #ffffff;
+}
+.button {
+  height: 40px;
+  width: 360px;
+  background-color: orange;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 0px;
+}
+.error-msg {
+  color: red;
+}

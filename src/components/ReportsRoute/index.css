@@ -1,0 +1,54 @@
+.r-container {
+  height: 120vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  background-size: cover;
+}
+
+.head {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin: 0px;
+  padding: 40px;
+}
+.o-container {
+  width: Fixed (1, 316px) px;
+  height: Hug (254px) px;
+  top: 212px;
+  left: 62px;
+  gap: 17px;
+  opacity: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.e-list {
+  background-color: #42404d;
+  height: 300px;
+  width: 250px;
+  border-radius: 8px;
+  border: 0px;
+  list-style-type: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.img1 {
+  height: 60px;
+  width: 70px;
+}
+.para {
+  font-size: 20px;
+  color: wheat;
+  padding-bottom: 40px;
+}
+.rp-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}

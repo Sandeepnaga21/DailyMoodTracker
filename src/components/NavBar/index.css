@@ -1,0 +1,29 @@
+.button1 {
+  height: 40px;
+  width: 108px;
+  background-color: transparent;
+  border: 1px solid orange;
+  border-radius: 8px;
+  color: white;
+}
+.navbar {
+  height: 14vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navbar-brand {
+  color: orange;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.nav-link {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 10px;
+}

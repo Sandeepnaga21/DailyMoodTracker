@@ -1,0 +1,26 @@
+.img {
+  height: 60vh;
+  width: 90vw;
+  margin: 10px;
+}
+.n-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  background-size: cover;
+}
+.head {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: wheat;
+}
+.des {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: wheat;
+}
