@@ -1,8 +1,9 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
+import {Redirect} from 'react-router-dom'
 import './index.css'
 
-class LoginRoute extends Component {
+class Login extends Component {
   state = {
     username: '',
     password: '',
@@ -52,51 +53,55 @@ class LoginRoute extends Component {
   render() {
     const {username, password, isClicked, showErrMsg, errMsg} = this.state
     const inputType = isClicked ? 'text' : 'password'
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to='/' />
+    }
 
     return (
-      <div className="bg-container">
-        <form className="L-container" onSubmit={this.onClickLoginBtn}>
-          <h1 className="L-heading">Daily Mood Tracker</h1>
-          <div className="U-container">
-            <label htmlFor="user" className="L-label">
+      <div className='bg-container'>
+        <form className='L-container' onSubmit={this.onClickLoginBtn}>
+          <h1 className='L-heading'>Daily Mood Tracker</h1>
+          <div className='U-container'>
+            <label htmlFor='user' className='L-label'>
               USERNAME
             </label>
             <input
-              id="user"
-              className="L-input"
-              type="text"
+              id='user'
+              className='L-input'
+              type='text'
               onChange={this.onChangeUserName}
               value={username}
             />
           </div>
-          <div className="P-container">
-            <label htmlFor="pass" className="L-label">
+          <div className='P-container'>
+            <label htmlFor='pass' className='L-label'>
               PASSWORD
             </label>
             <input
-              id="pass"
-              className="L-input"
+              id='pass'
+              className='L-input'
               type={inputType}
               onChange={this.onChangePassword}
               value={password}
             />
           </div>
-          <div className="S-container">
+          <div className='S-container'>
             <input
-              type="checkbox"
-              id="check"
+              type='checkbox'
+              id='check'
               onClick={this.onClickCheckbox}
-              className="input"
+              className='input'
             />
-            <label htmlFor="check" className="label">
+            <label htmlFor='check' className='label'>
               Show Password
             </label>
           </div>
-          <div className="b-container">
-            <button type="submit" className="button">
+          <div className='b-container'>
+            <button type='submit' className='button'>
               LogIn
             </button>
-            {showErrMsg && <p className="error-msg">*{errMsg}</p>}
+            {showErrMsg && <p className='error-msg'>*{errMsg}</p>}
           </div>
         </form>
       </div>
@@ -104,4 +109,4 @@ class LoginRoute extends Component {
   }
 }
 
-export default LoginRoute
+export default Login
